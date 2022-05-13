@@ -46,7 +46,7 @@ function uploadTransaction() {
           }
           const transaction = db.transaction(["new_transaction"], "readwrite");
           const transactionObjectStore =
-            transaction.objectStore("new_transactions");
+            transaction.objectStore("new_transaction");
           transactionObjectStore.clear();
 
           alert("All saved transactions has been submitted!");
